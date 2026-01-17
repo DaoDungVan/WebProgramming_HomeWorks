@@ -1,0 +1,19 @@
+.tb1 {
+  border-collapse: collapse;
+  width: 30%;
+  margin: 12px 0 20px 0;
+}
+
+.tb2 {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 12px 0 20px 0;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  vertical-align: middle;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thao tác với table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML Table</h1>
+      <a href="#task1">Task 1</a>
+      <a href="#task2">Task 2</a>
+    </header>
+    <main>
+      <section aria-labelledby="task1">
+          <h3 id="task1">Task 1</h3>
+          <table class="tb1">
+            <caption>
+              Danh sách học viên
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Họ Tên</th>
+                <th scope="col">Email</th>
+                <th scope="col">Điểm</th>
+                <th scope="col">Xếp loại</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Nguyễn Văn A</td>
+                <td>a.nguyen@gmail.com</td>
+                <td>8.5</td>
+                <td>Giỏi</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Trần Thị B</td>
+                <td>b.trần@gmail.com</td>
+                <td>7.2</td>
+                <td>Khá</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Lê Văn C</td>
+                <td>c.le@gmail.com</td>
+                <td>5.9</td>
+                <td>Trung bình</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">
+                  <em>
+                    <span><strong>Tiêu chí xếp loại:</strong></span>
+                    Giỏi (&geq; 8.5), Khá (&geq; 7.0), Trung bình (&geq; 5.0)
+                  </em>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+      </section>
+      <section aria-labelledby="task2">
+        <h3 id="task2">Task 2</h3>
+        <table class="tb2">
+            <caption>Báo cáo doanh thu năm 2025</caption>
+            <thead>
+                <tr>
+                    <th scope="colgroup" colspan="3">Quý 1</th>
+                    <th scope="colgroup" colspan="3">Quý 2</th>
+                    <th scope="colgroup" colspan="3">Quý 3</th>
+                    <th scope="colgroup" colspan="3">Quý 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">T1</th>
+                    <th scope="col">T2</th>
+                    <th scope="col">T3</th>
+                    <th scope="col">T4</th>
+                    <th scope="col">T5</th>
+                    <th scope="col">T6</th>
+                    <th scope="col">T7</th>
+                    <th scope="col">T8</th>
+                    <th scope="col">T9</th>
+                    <th scope="col">T10</th>
+                    <th scope="col">T11</th>
+                    <th scope="col">T12</th>
+                </tr>
+                <tr>
+                    <td>120 triệu</td>
+                    <td>95 triệu</td>
+                    <td>105 triệu</td>
+                    <td>100 triệu</td>
+                    <td>195 triệu</td>
+                    <td>705 triệu</td>
+                    <td>420 triệu</td>
+                    <td>25 triệu</td>
+                    <td>805 triệu</td>
+                    <td>120 triệu</td>
+                    <td>65 triệu</td>
+                    <td>405 triệu</td>
+                </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="12" style="text-align: left;">
+                    <span><strong>Tổng doanh thu năm: </strong></span>
+                    3 tỷ 160 triệu đồng
+                </td>
+              </tr>
+            </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
