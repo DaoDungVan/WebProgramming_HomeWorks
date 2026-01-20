@@ -1,0 +1,130 @@
+body {
+  margin: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /*Tạo khoảng cách giữa các thẻ*/
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+.header {
+  background-color: #00d9ff;
+  padding: 20px 20px;
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+}
+
+/* LIST */
+.features {
+  margin-bottom: 15px;
+  list-style: none; /* bỏ chấm */
+  margin: 0;
+}
+
+/* BUTTON */
+.btn {
+  margin: 0 30px 30px;
+  padding: 16px;
+  width: calc(100% - 60px);
+  border-radius: 30px;
+  border: 2px solid #1b0760;
+  color: #1b0760;
+  font-weight: bold;
+  background: transparent; /* nền trong suốt */
+  cursor: pointer; /* trỏ tới thành bàn tay */
+}
+
+/* card popular làm mốc cho position */
+.popular {
+  margin-top: 10px;
+  position: relative;
+  transform: translateY(-20px);
+}
+
+.popular .header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* popular.svg hình */
+.badge {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 45px;
+}
+
+.dark {
+  background-color: #2584ff;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+}
+
+.price h2 {
+  margin: 10px 0;
+  font-size: 36px;
+}
+
+.price h2 span {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.off {
+  padding: 6px 12px;
+  border-radius: 30px;
+  background-color: #02cdf1;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.popular .off {
+  background-color: #126de4;
+}
+
+.plan {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.desc {
+  margin-top: 12px;
+  font-size: 22px;
+}
+
+.features {
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+}
+
+.features li {
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.features li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #00c98d;
+  font-weight: bold;
+}
