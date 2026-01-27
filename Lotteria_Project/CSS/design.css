@@ -1,0 +1,184 @@
+:root {
+  --color--brand: #ff5b6a;
+  --color--nav--text: #142f43;
+  --color--primary: #000;
+  --color--secondary: #969696;
+  --color--money--old: #6b6c6c;
+  --color--lotteria: #eb1d25;
+  --color--language: #c20000;
+  --color--main-content: #fffcfe;
+  --color--footer: #ffeae3;
+  --color--copyright: #ff9ea2;
+}
+
+/* Scroll Bar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color--brand) transparent;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--color--main-content);
+  line-height: 1;
+}
+
+/* <------------------------------------------------ Header - Nav Bar ---------------------------------------------------------------> */
+/* Logo */
+.logo img {
+  width: 7rem;
+  height: 7rem;
+}
+
+/* Header */
+.loheader {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* dòng này giúp căn giữa */
+  margin: 0 auto; /* dòng này giúp căn giữa */
+  width: 100%;
+  padding: 0.8rem 3rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Button */
+.right-button-top {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.right-button-bottom {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.btn-download {
+  border: 0.1rem solid var(--color--lotteria);
+  background-color: var(--color--lotteria);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  gap: 0.5rem;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-download span{
+  padding-top: 0.2rem;
+}
+
+.btn-language {
+  border-radius: 2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color--language);
+  gap: 0.3rem;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-language span{
+  padding-top: 0.2rem;
+}
+
+.icon {
+  border-radius: 10rem;
+  justify-content: center;
+  padding: 1rem;
+  display: flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon-download {
+  border: 0.1rem solid white;
+  border-radius: 0.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.icon-arrow {
+  width: 0.7rem;
+}
+
+/* NavBar menu */
+.menu-list {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: var(--color--nav--text);
+  position: relative; /*để làm hover*/
+}
+
+.menu-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4.2rem;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--color--brand);
+  /* transition: 0.3s; */
+}
+
+.menu-list li a:hover::after {
+  width: 100%;
+}
+
+.menu-list li a:hover {
+  color: var(--color--brand);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  
+}
+
+/* <------------------------------------------------ Header - Nav Bar ---------------------------------------------------------------> */
