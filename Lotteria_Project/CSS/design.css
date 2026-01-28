@@ -20,6 +20,8 @@
 /* Typography */
 html {
   font-size: 62.5%;
+  /* display: flex ;
+  flex-direction: column; */
 }
 
 body {
@@ -181,4 +183,104 @@ body {
   
 }
 
-/* <------------------------------------------------ Header - Nav Bar ---------------------------------------------------------------> */
+/* <------------------------------------------------ Main - Category ---------------------------------------------------------------> */
+
+/* Category */
+.main-container {
+  margin-top: 10rem;
+}
+
+.catagory{
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.catagory-item a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.catagory-item a img{
+  width: 9.6rem;
+  border-radius: 1.5rem;
+}
+
+.txt{
+  color: var(--color--nav--text);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+
+/* Thẻ đồ ăn */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3.2rem;
+  padding: 10rem 0;
+}
+
+
+.product-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .15);
+  position: relative;
+}
+
+.product-card h3 a{
+  text-decoration: none;
+  color: var(--color--nav--text);
+}
+
+.product-img img {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+.product-desc{
+  opacity: .7;
+  margin: 1.6rem 0;
+  font-size: 1.4rem;
+  color: var(--color--nav--text);
+  height: 4.2rem;
+}
+
+.product-desc p{
+  margin: 0.5rem 0;
+}
+
+.price-new {
+  color: var(--color--brand);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.4rem;
+}
+
+.btn-add {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  background: var(--color--brand);
+  color: white;
+  font-size: 2.4rem;
+  border: none;
+  cursor: pointer;
+}
